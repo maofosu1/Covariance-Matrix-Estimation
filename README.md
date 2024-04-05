@@ -1,4 +1,5 @@
-Shrinkage Covariance Estimation: LedoitWolf vs OAS vs OASD vs DOASD
+**Shrinkage Covariance Estimation: LedoitWolf vs OAS vs OASD vs DOASD**
+
 When working with covariance estimation, the usual approach is to use a maximum likelihood estimator, such as the EmpiricalCovariance. It is unbiased, i.e., it converges to the true (population) covariance when given many observations. However, it can also be beneficial to regularize it, in order to reduce its variance; this, in turn, introduces some bias. This example illustrates the simple regularization used in shrunk_covariance estimators. In particular, it focuses on how to set the amount of regularization, i.e., how to choose the bias-variance trade-off.
 
 Here, we compare four approaches:
